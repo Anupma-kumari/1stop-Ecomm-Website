@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login & Resgister Form</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <script
+      src="https://kit.fontawesome.com/9116ed7fd0.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" type="text/css" href="../css/loginstyles.css" />
+  </head>
+  <body>
+    <nav class="nav nav_top">
+      <div class="logo">
+        <a href="index.html"
+          ><img src="../img/1Stop_logo.png" alt="logo" width="150"
+        /></a>
+      </div>
+      <div class="nav_side">
+        <a href="about.html">About Us</a>
+        <a href="service.html">Services</a>
+        <a href="blog.html">Blogs</a>
+        <a href="contact.html">Contact</a>
+        <a href="/">Login/Register</a>
+      </div>
+    </nav>
+    <div class="login-page">
+      <div class="box">
+        <div class="left">
+          <h3>Create Account</h3>
+          <button type="button" class="register-btn">Register</button>
+        </div>
+        <div class="right">
+          <h3>Have an Account ?</h3>
+          <button type="button" class="login-btn">Login</button>
+        </div>
+        <div class="form">
+          <!-- Login form Start -->
+          <div class="login-form">
+            <h3>Log In</h3>
+            <div class="form-group">
+              <input
+                type="text"
+                placeholder="Email Address*"
+                class="form-control"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="password"
+                placeholder="Password*"
+                class="form-control"
+              />
+            </div>
+            <div class="form-group">
+              <label> <input type="checkbox" /> Remember Me </label>
+            </div>
+            <button type="button" class="submit-btn">Login</button>
+            <p>
+              <a href="#" class="register-btn">Register</a> |
+              <a href="#" class="lost-pass-btn">Lost Your Password ?</a>
+            </p>
+          </div>
+          <!-- Login form End -->
+
+          <!-- Register form Start -->
+          <div class="register-form form-hidden">
+            <h3>Register</h3>
+            <div class="form-group">
+              <input
+                type="text"
+                placeholder="First Name*"
+                class="form-control"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                placeholder="Last Name*"
+                class="form-control"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                placeholder="Email Address*"
+                class="form-control"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="password"
+                placeholder="Password*"
+                class="form-control"
+              />
+            </div>
+
+            <button type="button" class="submit-btn">Register</button>
+            <p>
+              <a href="#" class="login-btn">Login</a> |
+              <a href="#" class="lost-pass-btn">Lost Your Password ?</a>
+            </p>
+          </div>
+          <!-- Register form End -->
+
+          <!-- Lost Password form Start -->
+          <div class="lost-password-form form-hidden">
+            <h3>Lost Your Password ?</h3>
+            <h5>You will receive a link to create a new password via email.</h5>
+
+            <div class="form-group">
+              <input
+                type="text"
+                placeholder="Email Address*"
+                class="form-control"
+              />
+            </div>
+
+            <button type="button" class="submit-btn">Reset Password</button>
+            <p>
+              <a href="#" class="login-btn">Login</a> |
+              <a href="#" class="register-btn">Register</a>
+            </p>
+          </div>
+          <!-- Lost Password form End -->
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer_logo">
+        <a href="index.html"
+          ><img src="../img/1Stop_logo.png" alt="logo" width="150"
+        /></a>
+      </div>
+      <div class="pages">
+        <h3>Pages</h3>
+        <a href="about.html">About Us</a>| <a href="service.html">Services</a>|
+        <a href="blog.html">Blogs</a>| <a href="">Login</a>|
+        <a href="">Sign Up</a>
+      </div>
+      <div class="doc">
+        <h3>Docs</h3>
+        <a href="">Privacy Policy</a>| <a href="">Terms Of Use</a>|
+        <a href="">Refund Policy</a>
+      </div>
+      <div class="Social">
+        <h3>Follow us</h3>
+        <a href="https://www.facebook.com/uomstop1/" target="_black"
+          ><span><i class="fab fa-facebook"></i></span
+        ></a>
+        <a
+          href="https://www.linkedin.com/company/1stop-ai/?originalSubdomain=in"
+          target="_black"
+          ><span><i class="fab fa-linkedin"></i></span
+        ></a>
+        <a href="https://www.instagram.com/1stop.co.in/" target="_black"
+          ><span><i class="fab fa-instagram"></i></span
+        ></a>
+        <a href="https://twitter.com/onestopai?lang=en"
+          ><span><i class="fab fa-twitter"></i></span
+        ></a>
+      </div>
+      <div class="Contact">
+        <h3>Contact Us</h3>
+        <a
+          href="https://api.Whatsapp.com/send?phone=+919876543210"
+          target="_black"
+          ><i class="fab fa-whatsapp"></i
+        ></a>
+        <a href="tel:+919876543210"><i class="fas fa-phone"></i></a>
+        <a href="mailto:support@1stop.ai"><i class="fas fa-envelope"></i></a>
+      </div>
+      <hr />
+      <p style="text-align: center">
+        Copright &copy; 2021 1stop. All Rights Reserved
+      </p>
+    </footer>
+
+    <script src="../js/auth.js"></script>
+  </body>
+</html>

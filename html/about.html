@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>E-commerce| About Us</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/9116ed7fd0.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <nav class="nav nav_top">
+      <div class="logo">
+        <a href="index.html"
+          ><img src="../img/1Stop_logo.png" alt="logo" width="150"
+        /></a>
+      </div>
+      <div class="nav_side">
+        <a href="about.html">About Us</a>
+        <a href="service.html">Services</a>
+        <a href="blog.html">Blogs</a>
+        <a href="contact.html">Contact</a>
+        <a href="/">Login/Register</a>
+      </div>
+    </nav>
+    <div class="about_us">
+      <h2>About Us</h2>
+      <div class="about_content">
+        <p>
+          Over the past 10 years, 1stop Ecom has been bringing the latest
+          designs & fashion to Indian homes. HomeTown offers the widest and best
+          in class range in furniture, home furnishings & decor, modular
+          kitchens, home improvement and more. Part of the Future Group,
+          HomeTown brings an enjoyable and hassle-free homemaking experience to
+          all its valuable customers with varying lifestyles and preferences. We
+          promise to facilitate our customers with a unique and personalized
+          shopping experience. Our commitment to quality and timeless designs
+          has helped us evolve over the years and it indeed fills us with pride
+          to be the first choice of many.
+        </p>
+      </div>
+      <hr />
+      <h2>Our Misson</h2>
+      <p>
+        With a great spread that appeals to the globe-trotting, trendy yet very
+        much Indian homemaker, HomeTown is known to attract an array of
+        lifestyle seeking customers. Being recognized as India’s biggest store
+        in homemaking, renovation and decor, our products are exclusively
+        designed while keeping durability and comfort at priority.The key
+        differentiator between Home Town and others is the Design and Build
+        offering of end-to-end interior decoration services, to customers who
+        are interested in renovating & upgrading their homes.
+      </p>
+    </div>
+
+    <div class="feed">
+      <h2>Write a review</h2>
+      <div class="feed_form">
+        <form name="submit-googlesheet" method="post">
+          <input type="text" name="Name" placeholder="Name" /><br />
+          <input type="email" name="Email" placeholder="Email ID" /><br />
+          <input
+            type="number"
+            name="Number"
+            placeholder="Contact Number"
+          /><br />
+          <textarea
+            rows="5"
+            cols="7"
+            name="Review"
+            placeholder="Write Your Review"
+          ></textarea
+          ><br />
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer_logo">
+        <a href="index.html"
+          ><img src="../img/1Stop_logo.png" alt="logo" width="150"
+        /></a>
+      </div>
+      <div class="pages">
+        <h3>Pages</h3>
+        <a href="about.html">About Us</a>| <a href="service.html">Services</a>|
+        <a href="blog.html">Blogs</a>| <a href="login.html">Login</a>|
+        <a href="login.html">Sign Up</a>
+      </div>
+      <div class="doc">
+        <h3>Docs</h3>
+        <a href="">Privacy Policy</a>| <a href="">Terms Of Use</a>|
+        <a href="">Refund Policy</a>
+      </div>
+      <div class="Social">
+        <h3>Follow us</h3>
+        <a href="https://www.facebook.com/uomstop1/" target="_black"
+          ><span><i class="fab fa-facebook"></i></span
+        ></a>
+        <a
+          href="https://www.linkedin.com/company/1stop-ai/?originalSubdomain=in"
+          target="_black"
+          ><span><i class="fab fa-linkedin"></i></span
+        ></a>
+        <a href="https://www.instagram.com/1stop.co.in/" target="_black"
+          ><span><i class="fab fa-instagram"></i></span
+        ></a>
+        <a href="https://twitter.com/onestopai?lang=en"
+          ><span><i class="fab fa-twitter"></i></span
+        ></a>
+      </div>
+      <div class="Contact">
+        <h3>Contact Us</h3>
+        <a
+          href="https://api.Whatsapp.com/send?phone=+919876543210"
+          target="_black"
+          ><i class="fab fa-whatsapp"></i
+        ></a>
+        <a href="tel:+919876543210"><i class="fas fa-phone"></i></a>
+        <a href="mailto:support@1stop.ai"><i class="fas fa-envelope"></i></a>
+      </div>
+      <hr />
+      <p style="text-align: center">
+        Copright &copy; 2021 1stop. All Rights Reserved
+      </p>
+    </footer>
+    <script type="text/javascript">
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycby5aUGrd0f75_tN_y5jFdZrjc61wDM1Oj3f7vSbxYS3L71IlZRbbxVqXFmH8xsHG-Yf/exec";
+      const form = document.forms["submit-googlesheet"];
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => alert("Thankyou for your Review!Happy Shopping"))
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
